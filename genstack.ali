@@ -1,0 +1,70 @@
+V "GNAT Lib v2016"
+M P W=b
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U genstack%b		genstack.adb		1c86a225 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W generic_stack%s	generic_stack.adb	generic_stack.ali
+W interfaces%s		interfac.ads		interfac.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092927 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092929 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-tiinau.ads		20160516092930 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20160516092928 aa04e5d6 ada.text_io.integer_io%s
+D a-tiinio.adb		20160516092930 df9cd7af ada.text_io.integer_io%b
+D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
+D generic_stack.ads	20160807224918 d3633bdb generic_stack%s
+D generic_stack.adb	20160807225129 e553ccf6 generic_stack%b
+D genstack.adb		20160807225528 f7886c2a genstack%b
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092931 c3282aa7 system%s
+D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092931 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092933 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092929 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092931 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 13|1r6 1r23 5r24
+X 6 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 1r27 5r28
+166U14*New_Line 13|16s48
+242U14*Put 13|12s9 16s9
+X 8 a-tiinio.ads
+46k21*Integer_IO 85e27 13|5r36
+56U14 Get 13|12s35[5]
+66U14 Put 13|16s40[5]
+X 11 generic_stack.ads
+5k9*generic_stack 8e18 13|2w6 7r34
+6U15 push 13|12s43[7]
+7U15 pop 13|16s32[7]
+X 13 genstack.adb
+4U11*genstack 4b11 18l5 18t13
+5K13 IIO[8|46] 5r61
+7K13 integer_stack[11|5] 8r9
+9i5 m{integer} 12m39 12r48 16m36 16r44
+11i9 i{integer}
+15i9 i{integer}
+
