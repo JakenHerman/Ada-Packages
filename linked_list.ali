@@ -3,21 +3,25 @@ M P W=b
 P ZX
 
 RN
+RV NO_ALLOCATORS
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTIONS
 RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
 RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U genstack%b		genstack.adb		90a7f10c NE OO SU IL
+U linked_list%b		linked_list.adb		d33d3609 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
 W ada.text_io.integer_io%s
-W generic_stack%s	generic_stack.adb	generic_stack.ali
-W interfaces%s		interfac.ads		interfac.ali
 
 D ada.ads		20160516092928 3ffc8e18 ada%s
 D a-except.ads		20160516092928 291912d5 ada.exceptions%s
@@ -29,11 +33,9 @@ D a-tiinau.ads		20160516092930 8114c8e4 ada.text_io.integer_aux%s
 D a-tiinio.ads		20160516092928 aa04e5d6 ada.text_io.integer_io%s
 D a-tiinio.adb		20160516092930 df9cd7af ada.text_io.integer_io%b
 D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
-D generic_stack.ads	20160807224918 d3633bdb generic_stack%s
-D generic_stack.adb	20160807225129 e553ccf6 generic_stack%b
-D genstack.adb		20160808013938 7ba93f03 genstack%b
 D interfac.ads		20160516092928 5ab55268 interfaces%s
 D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
+D linked_list.adb	20160808024742 eb50c3dd linked_list%b
 D system.ads		20160516092931 c3282aa7 system%s
 D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
 D s-exctab.ads		20160516092931 54135002 system.exception_table%s
@@ -47,25 +49,28 @@ D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20160516092931 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 19e8 13|1r6 1r23 5r24
+16K9*Ada 19e8 13|1r6 1r23 12r24
 X 6 a-textio.ads
-49K13*Text_IO 471e16 13|1w10 1r27 5r28
-166U14*New_Line 13|18s66
-242U14*Put 13|12s5 14s9 18s9
+49K13*Text_IO 471e16 13|1w10 1r27 12r28
+166U14*New_Line 13|34s50
+240U14*Get 13|26s9
+242U14*Put 13|22s9 25s9 34s27 34s37
 X 8 a-tiinio.ads
-46k21*Integer_IO 85e27 13|5r36
-56U14 Get 13|12s45[5] 14s35[5]
-66U14 Put 13|18s49[5]
-X 11 generic_stack.ads
-5k9*generic_stack 8e18 13|2w6 7r34
-6U15 push 13|14s52[7]
-7U15 pop 13|18s32[7]
-X 13 genstack.adb
-4U11*genstack 4b11 20l5 20t13
-5K13 IIO[8|46] 5r61
-7K13 integer_stack[11|5] 8r9
-9i5 m{integer} 12m49
-10i5 user_value{integer} 14m39 14r57 18m36 18r53
-13i9 i{integer}
-17i9 i{integer}
+46k21*Integer_IO 85e27 13|12r36
+56U14 Get 13|23s9[12]
+66U14 Put 13|34s13[12]
+X 13 linked_list.adb
+2U11*linked_list 2b11 38l5 38t16
+3R10 node 4r25 5c10 10e15 27r24
+4P10 link(3R10) 9r19 15r8 16r25
+7i13 value{integer} 34r19
+8a13 rest{string} 34r43
+9p13 next{4P10} 35r20
+12K13 IIO[8|46] 12r61
+14i5 int{integer} 23m13 24r19 27r12 27r30 27r42
+15p5 l{4P10} 32m9 33r15 34r17 34r41 35m13 35r18
+16a5 pt(4P10) 20m25 27m9 27r39 32r14
+17a5 ch{string} 26m13 27r35
+20i9 i{integer} 20r28
+31i9 i{integer} 32r17
 

@@ -7,12 +7,14 @@ procedure genstack is
     package integer_stack is new generic_stack(100, integer);
     use integer_stack;
     m : integer;
+    user_value : integer;
 begin
+    put("How much (M)emory to allocate? "); get(m);
     for i in 1..4 loop
-        put("enter an integer "); get(m); push(m);
+        put("enter an integer "); get(user_value); push(user_value);
     end loop;
 
     for i in 1..4 loop
-        put("result of pop "); pop(m); put(m); new_line;
+        put("result of pop "); pop(user_value); put(user_value); new_line;
     end loop;
 end genstack;
